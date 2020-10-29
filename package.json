@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "A small gaussian blur library for tensorflow.js (tf.js)",
   "main": "index.js",
-  "files": ["build/*"],
+  "files": [
+    "build/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "mocha",
     "format": "prettier --write src/*.ts",
     "lint": "tslint -p tsconfig.json"
-
   },
-  "preversion" : "npm run lint",
+  "preversion": "npm run lint",
   "homepage": "https://github.com/Ely-S/tf-gaussian-blur",
   "repository": {
     "type": "git",
