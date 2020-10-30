@@ -1,12 +1,14 @@
 # Gaussian blur for tf.js
 
-This is a small, very fast library to execute image filters using Web.GL, and any runtime supported by Tensorflow.js.
+This is a small, very fast library to execute image filters using Web.GL and any runtime supported by Tensorflow.js.
 
 ## Install
 
 ```
 npm install --save tf-gaussian-blur
 ```
+
+## Example
 
 ```
 const gaussianBlur = require("tf-gaussian-blur");
