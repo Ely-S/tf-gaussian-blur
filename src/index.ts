@@ -26,8 +26,10 @@ export function getGaussianKernel(size = 5, sigma?: number): Tensor4D {
   });
 }
 
-export function blur(image: Tensor3D, kernel: Tensor4D): Tensor3D {
+export function blur(  image: Tensor3D,  kernel: Tensor4D,
+  pad: number | "valid" | "same" = 'same'
+  ): Tensor3D {
   return tf.tidy(() => {
-    return tf.depthwiseConv2d(image, kernel, 1, 'valid');
+    return tf.depthwiseConv2d(image, kernel, 1, pad);
   });
 }
