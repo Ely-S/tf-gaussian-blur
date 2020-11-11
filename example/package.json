@@ -9,6 +9,6 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build --public-url /tf-gaussian-blur/examples/dist/ index.html"
+    "build": "parcel build --public-url /tf-gaussian-blur/example/dist/ index.html"
   }
 }
