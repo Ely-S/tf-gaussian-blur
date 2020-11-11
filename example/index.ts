@@ -9,7 +9,7 @@ const sigmaInput = document.getElementById("sigma") as HTMLInputElement
 const paddingInput = document.getElementById("padding") as HTMLSelectElement
 const pixels = tf.browser.fromPixels(src)
 
-var padding = "same"
+var padding = "valid"
 var size = 5
 var sigma = 3
 

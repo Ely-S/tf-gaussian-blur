@@ -11,8 +11,7 @@ function get1dGaussianKernel(sigma, size) {
 }
 function get2dGaussianKernel(size, sigma) {
     // This default is to mimic opencv2.
-    sigma = sigma === undefined ?
-        0.3 * ((size - 1) * 0.5 - 1) + 0.8 : sigma;
+    sigma = sigma === undefined ? 0.3 * ((size - 1) * 0.5 - 1) + 0.8 : sigma;
     var kerne1d = get1dGaussianKernel(sigma, size);
     return tf.outerProduct(kerne1d, kerne1d);
 }

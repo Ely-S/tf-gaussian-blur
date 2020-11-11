@@ -1,6 +1,7 @@
 {
   "name": "tf-gaussian-blur",
-  "version": "1.0.2",
+  "license": "MIT",
+  "version": "1.0.3",
   "description": "A small gaussian blur library for tensorflow.js (tf.js)",
   "main": "./build/index.js",
   "files": [ "build/*" ],
@@ -27,7 +28,6 @@
     "tf"
   ],
   "author": "Ely-S",
-  "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",

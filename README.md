@@ -16,7 +16,7 @@ npm install --save tf-gaussian-blur
 
 This is a symetric (NxNx3x1) tensor that is convolved across an image tensor to generate a blur effect.
 
-`size` determines the dimension of the kernel. The larger `size` the more surrounding pixels are included in the filter. `size` must be odd.
+`size` determines the dimension of the kernel. The larger `size` the more surrounding pixels are included in the filter. `size` must be odd. Computation time increases exponentially as `size` increases.
 
 `sigma` is optional and sets the standard deviation of the gaussian distribution. A higher `sigma` gives further pixels higher weight in the output.
 
