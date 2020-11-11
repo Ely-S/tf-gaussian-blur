@@ -2,6 +2,8 @@
 
 This is a small, very fast library to execute image filters using Web.GL on any runtime supported by Tensorflow.js.
 
+(Demo)[https://eli.cool/tf-gaussian-blur/example/dist/index.html]
+
 ## Install
 
 ```
