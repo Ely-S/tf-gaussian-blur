@@ -2,13 +2,11 @@
   "name": "tf-gaussian-blur",
   "version": "1.0.1",
   "description": "A small gaussian blur library for tensorflow.js (tf.js)",
-  "main": "index.js",
-  "files": [
-    "build/*"
-  ],
+  "main": "./build/index.js",
+  "files": [ "build/*" ],
   "scripts": {
     "build": "tsc",
-    "test": "mocha",
+    "test": "jest",
     "format": "prettier --write src/*.ts",
     "lint": "tslint -p tsconfig.json"
   },
@@ -31,10 +29,17 @@
   "author": "Ely-S",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-typescript": "^7.12.1",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
     "prettier": "^2.1.2",
+    "ts-node": "^9.0.0",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.0.5"
+    "typescript": "^4.0.5",
+    "@types/jest": "^26.0.15"
   },
   "dependencies": {
     "@tensorflow/tfjs": "^2.5.0"
